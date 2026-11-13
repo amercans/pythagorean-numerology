@@ -16,7 +16,7 @@ Pythagorean numerology calculations for TypeScript and JavaScript: life path, ex
 
 Most numerology code is either embedded in a single website or wrapped in a paid API that needs a network round trip and a key. Neither is easy to test, and both tend to drop accented letters silently, so `Søndergaard` and `Sondergaard` give different results.
 
-This library is the calculation engine on its own: small, typed and checkable against the worked examples in the methodology.
+This library is the calculation engine on its own: small, typed and checkable against the worked examples in the methodology. It was extracted from the calculators behind [truenumerology.com](https://truenumerology.com).
 
 ## Install
 
@@ -112,5 +112,3 @@ Bug reports and pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md
 ## License
 
 [MIT](LICENSE)
-
-Extracted from the calculators behind truenumerology.com.
