@@ -4,7 +4,11 @@
 [![Release](https://img.shields.io/github/v/release/amercans/pythagorean-numerology)](https://github.com/amercans/pythagorean-numerology/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Pythagorean numerology calculations for TypeScript and JavaScript: life path, expression, soul urge, personality, personal year, karmic debt and the rest of a standard chart.
+Pythagorean numerology calculations for TypeScript and JavaScript, by [True Numerology](https://truenumerology.com): life path, expression, soul urge, personality, personal year, karmic debt and the rest of a standard chart.
+
+**Try it:** [truenumerology.com/life-path](https://truenumerology.com/life-path)
+
+<img src="docs/screenshot.webp" alt="Life path calculator on truenumerology.com showing 22, a master number, for 3 November 1988" width="620">
 
 - **Deterministic.** The same input always gives the same number. The library calculates; it does not interpret.
 - **No dependencies, no network.** Plain ES2022 with no platform APIs, so it runs in Node 20+ and in modern browsers. ESM and CommonJS builds with type definitions.
@@ -16,7 +20,7 @@ Pythagorean numerology calculations for TypeScript and JavaScript: life path, ex
 
 Most numerology code is either embedded in a single website or wrapped in a paid API that needs a network round trip and a key. Neither is easy to test, and both tend to drop accented letters silently, so `Søndergaard` and `Sondergaard` give different results.
 
-This library is the calculation engine on its own: small, typed and checkable against the worked examples in the methodology. It was extracted from the calculators behind [truenumerology.com](https://truenumerology.com).
+This library is the calculation engine on its own: small, typed and checkable against the worked examples in the methodology. It grew out of the calculators on the site.
 
 ## Install
 
