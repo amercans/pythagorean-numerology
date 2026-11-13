@@ -1,0 +1,70 @@
+{
+  "name": "pythagorean-numerology",
+  "version": "1.0.0",
+  "description": "Deterministic Pythagorean numerology calculations for TypeScript and JavaScript: life path, expression, soul urge, personal year, karmic debt and more. Zero dependencies.",
+  "keywords": [
+    "numerology",
+    "pythagorean",
+    "life-path",
+    "expression-number",
+    "soul-urge",
+    "personal-year",
+    "karmic-debt",
+    "master-numbers",
+    "typescript"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/amercans/pythagorean-numerology#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amercans/pythagorean-numerology.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amercans/pythagorean-numerology/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "METHODOLOGY.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc",
+    "lint": "eslint .",
+    "check": "npm run lint && npm run typecheck && npm test -- --coverage && npm run build",
+    "prepare": "tsup"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "^10.14.0",
+    "tsup": "^9.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
+  }
+}
